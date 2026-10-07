@@ -6,78 +6,78 @@
 
 @layer base {
   :root {
-    /* Light mode - warm off-white */
+    /* Light mode — warm olive-tinted off-white */
     --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
     --font-mono: 'JetBrains Mono', 'IBM Plex Mono', monospace;
 
-    --bg-base: #F4F5F3;
-    --bg-elevated: #FFFFFF;
-    --bg-surface: #EAEEEB;
-    --bg-surface-2: #E0E5E1;
-    --border-subtle: #D1D9D3;
-    --border-default: #C2CCC5;
-    --border-strong: #A8B5AC;
+    --bg-base: oklch(97.5% 0.010 107);
+    --bg-elevated: oklch(99.5% 0.005 107);
+    --bg-surface: oklch(95% 0.013 107);
+    --bg-surface-2: oklch(92% 0.016 107);
+    --border-subtle: oklch(92% 0.013 107);
+    --border-default: oklch(88% 0.016 107);
+    --border-strong: oklch(82% 0.020 107);
 
-    --text-primary: #1A2520;
-    --text-secondary: #4A5A52;
-    --text-muted: #7A8A80;
+    --text-primary: oklch(24% 0.020 107);
+    --text-secondary: oklch(45% 0.018 107);
+    --text-muted: oklch(58% 0.015 107);
 
-    --accent-primary: #0F7A4A;
-    --accent-bright: #22C55E;
-    --accent-glow: rgba(34, 197, 94, 0.12);
-    --accent-subtle: rgba(34, 197, 94, 0.06);
+    --accent-primary: oklch(39.4% 0.023 107.4);
+    --accent-bright: oklch(44% 0.035 107);
+    --accent-glow: oklch(39.4% 0.023 107.4 / 0.12);
+    --accent-subtle: oklch(39.4% 0.023 107.4 / 0.06);
 
-    --warn: #D97706;
-    --warn-bg: rgba(217, 119, 6, 0.08);
-    --error: #DC2626;
-    --error-bg: rgba(220, 38, 38, 0.08);
-    --info: #2563EB;
-    --info-bg: rgba(37, 99, 235, 0.08);
+    --warn: oklch(68% 0.130 65);
+    --warn-bg: oklch(68% 0.130 65 / 0.08);
+    --error: oklch(54% 0.180 25);
+    --error-bg: oklch(54% 0.180 25 / 0.08);
+    --info: oklch(52% 0.150 240);
+    --info-bg: oklch(52% 0.150 240 / 0.08);
 
-    --grid-color: rgba(0, 0, 0, 0.04);
-    --grid-dot: rgba(0, 0, 0, 0.07);
-    --grid-line: rgba(0, 0, 0, 0.03);
+    --grid-color: oklch(0% 0 0 / 0.04);
+    --grid-dot: oklch(0% 0 0 / 0.07);
+    --grid-line: oklch(0% 0 0 / 0.03);
 
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
-    --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.06);
-    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.08);
+    --shadow-sm: 0 1px 2px oklch(0% 0 0 / 0.04);
+    --shadow-md: 0 2px 8px oklch(0% 0 0 / 0.06);
+    --shadow-lg: 0 8px 24px oklch(0% 0 0 / 0.08);
 
     color-scheme: light;
   }
 
   .dark {
-    /* Dark mode - near-black with green-gray tint */
-    --bg-base: #090D0B;
-    --bg-elevated: #0D1411;
-    --bg-surface: #111A16;
-    --bg-surface-2: #16221D;
-    --border-subtle: #1C2823;
-    --border-default: #243029;
-    --border-strong: #2E3D35;
+    /* Dark mode — near-black with olive tint */
+    --bg-base: oklch(16% 0.010 107);
+    --bg-elevated: oklch(19% 0.010 107);
+    --bg-surface: oklch(23% 0.012 107);
+    --bg-surface-2: oklch(27% 0.014 107);
+    --border-subtle: oklch(25% 0.012 107);
+    --border-default: oklch(30% 0.014 107);
+    --border-strong: oklch(35% 0.016 107);
 
-    --text-primary: #E7F0EA;
-    --text-secondary: #8A9A91;
-    --text-muted: #5D6B63;
+    --text-primary: oklch(90% 0.012 107);
+    --text-secondary: oklch(65% 0.012 107);
+    --text-muted: oklch(48% 0.010 107);
 
-    --accent-primary: #22C55E;
-    --accent-bright: #22C55E;
-    --accent-glow: rgba(34, 197, 94, 0.15);
-    --accent-subtle: rgba(34, 197, 94, 0.04);
+    --accent-primary: oklch(58% 0.045 107);
+    --accent-bright: oklch(63% 0.055 107);
+    --accent-glow: oklch(58% 0.045 107 / 0.15);
+    --accent-subtle: oklch(58% 0.045 107 / 0.04);
 
-    --warn: #F59E0B;
-    --warn-bg: rgba(245, 158, 11, 0.08);
-    --error: #EF4444;
-    --error-bg: rgba(239, 68, 68, 0.08);
-    --info: #3B82F6;
-    --info-bg: rgba(59, 130, 246, 0.08);
+    --warn: oklch(72% 0.130 65);
+    --warn-bg: oklch(72% 0.130 65 / 0.08);
+    --error: oklch(60% 0.180 25);
+    --error-bg: oklch(60% 0.180 25 / 0.08);
+    --info: oklch(60% 0.150 240);
+    --info-bg: oklch(60% 0.150 240 / 0.08);
 
-    --grid-color: rgba(255, 255, 255, 0.03);
-    --grid-dot: rgba(255, 255, 255, 0.05);
-    --grid-line: rgba(255, 255, 255, 0.02);
+    --grid-color: oklch(100% 0 0 / 0.03);
+    --grid-dot: oklch(100% 0 0 / 0.05);
+    --grid-line: oklch(100% 0 0 / 0.02);
 
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
-    --shadow-md: 0 2px 8px rgba(0, 0, 0, 0.4);
-    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+    --shadow-sm: 0 1px 2px oklch(0% 0 0 / 0.3);
+    --shadow-md: 0 2px 8px oklch(0% 0 0 / 0.4);
+    --shadow-lg: 0 8px 24px oklch(0% 0 0 / 0.5);
 
     color-scheme: dark;
   }
